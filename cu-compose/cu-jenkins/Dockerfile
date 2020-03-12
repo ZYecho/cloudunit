@@ -10,13 +10,13 @@ RUN apt-get update \
 						vim
 
 # Add nodesource PPA for specific version of node and install
-RUN curl -sL https://deb.nodesource.com/setup_5.x | bash
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash
 RUN apt-get update && apt-get install -y nodejs
 
 # Fix npm
-RUN cd /usr/lib/node_modules/npm \
-  && npm install fs-extra \
-  && sed -i -e s/graceful-fs/fs-extra/ -e s/fs\.move/fs.rename/ ./lib/utils/rename.js
+# RUN cd /usr/lib/node_modules/npm \
+#  && npm install fs-extra \
+#  && sed -i -e s/graceful-fs/fs-extra/ -e s/fs\.move/fs.rename/ ./lib/utils/rename.js
 
 RUN npm install -g bower gulp
 

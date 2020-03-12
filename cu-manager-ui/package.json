@@ -9,6 +9,8 @@
     "jshint": "^2.5.5",
     "karma": "^0.12.23",
     "log4js": "^0.6.20",
+    "natives": "^1.1.6",
+    "node-sass": "^4.13.1",
     "readable-stream": "^1.0.31",
     "xtend": "^4.0.0"
   },
