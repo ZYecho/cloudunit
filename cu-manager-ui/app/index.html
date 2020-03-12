@@ -16,7 +16,7 @@
 
 <html class="no-js" id="ng-app" data-ng-app="webuiApp" data-ng-cloak="" ng-strict-di>
 <head>
-    <title>CloudUnit</title>
+    <title>cStack</title>
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
@@ -64,31 +64,28 @@
                 <span class="badge">{{main.CUEnv}}</span>
             </h1>
             <ul class="primary-links">
-                <li><a ui-sref="dashboard">Dashboard</a></li>
-                <li class="disabled"><a ui-sref="snapshots">App Templates</a></li>
-                <li><a ui-sref="mainTimeline">Messages</a></li>
+                <li><a ui-sref="dashboard">应用看板</a></li>
                 <li>
                     <div class="dropdown" dropdown>
                         <a class="dropdown-toggle"
-                           dropdown-toggle> Scripting
+                           dropdown-toggle> 应用脚本
                         </a>
                         <ul class="dropdown-menu" role="menu">
                             <li>
                                 <a ui-sref="scriptingPlay">
-                                    Play Script
+                                    运行脚本
                                 </a>
                             </li>
                             <li>
                                 <a ui-sref="scriptingManage">
-                                    Manage Script
+                                    管理脚本
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </li>
-                <li><a ui-sref="editVolume">Volumes</a></li>
-                <li><a ui-sref="monitoring">Monitoring</a></li>
-                <li><a ui-sref="homepage">Portal</a></li>
+                <li><a ui-sref="editVolume">应用数据</a></li>
+                <li><a ui-sref="homepage">集成功能</a></li>
                 <li class="app-bar-cli">
                     <div class="dropdown" dropdown>
                         <a class="dropdown-toggle"
@@ -97,12 +94,12 @@
                         <ul class="dropdown-menu" role="menu">
                             <li>
                                 <a href="/resources/CloudUnitCLI.jar" target="_blank">
-                                    Download Jar
+                                    下载Jar包
                                 </a>
                             </li>
                             <li>
                                 <a href="https://github.com/Treeptik/cloudunit-cli" target="_blank">
-                                    Documentation on Github
+                                    文档说明
                                 </a>
                             </li>
                         </ul>

@@ -16,14 +16,14 @@
 <div class="page-header">
   <div class="page-title">
     <h2 class="title">
-    Manage volumes
+    数据卷管理
     </h2>
   </div>
 </div>
 
 <div class="volume-card card col-lg-4">
   <div class="content clearfix">
-    <h3 class="title large">Add volume</h3>
+    <h3 class="title large">添加数据卷</h3>
     
     <form id="add-ports"
           name="addPortsForm"
@@ -37,8 +37,8 @@
             data-ng-model="editVolume.newVolumeName"
             required="">
         <span class="bar"></span>
-        <label class="label-effect">Volume name</label>
-        <button ng-disabled="!editVolume.newVolumeName"  class="button raised pull-right">Create volume</button>
+        <label class="label-effect">数据卷名称</label>
+        <button ng-disabled="!editVolume.newVolumeName"  class="button raised pull-right">新建数据卷</button>
       </div>
     </form>
 
@@ -55,14 +55,14 @@
 
 <div class="volume-card card col-lg-8">
 	<div class="content clearfix">
-	  <h3 class="title large">List Volume</h3>
+	  <h3 class="title large">数据卷列表</h3>
 		
 		<table class="table">
       <thead>
         <tr>
-          <th>Name</th>
-          <th>Application linked</th>
-          <th>Action</th>
+          <th>名称</th>
+          <th>关联应用名称</th>
+          <th>操作</th>
         </tr>
       </thead>
       <tbody>
